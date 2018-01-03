@@ -1,8 +1,8 @@
 package Stacks;
 
-import Stacks.Instances.PlayingCard;
 import Stacks.Instances.CardProperties.Suit;
 import Stacks.Instances.CardProperties.Value;
+import Stacks.Instances.PlayingCard;
 
 import java.util.ArrayList;
 
@@ -20,7 +20,7 @@ public class CardStack {
         joker = 6;
         int standardCards = doubleSet ? Suit.values().length * Value.values().length * 2 : Suit.values().length * Value.values().length;
         cards = standardCards + specials + joker;
-        System.out.println(cards);
+        //System.out.println(cards);
     }
 
     public ArrayList<PlayingCard> getStack() {
